@@ -3,6 +3,18 @@ body {
 }
 
 .goodBurgerLogo {
-  width:auto;
+  width: auto;
   height: auto;
+}
+
+.devour {
+  background-color: #19FF04;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.submitBtn {
+  background-color: #FF0200;
+  border-radius: 50px;
+  color: #fff;
 }
