@@ -1,8 +1,8 @@
-INSERT INTO burgers (burger_name, devoured)
-VALUES ('classic', false);
+INSERT INTO burgers (name)
+VALUES ("classic");
 
-INSERT INTO burgers (burger_name, devoured)
-VALUES ('southwestern', false);
+INSERT INTO burgers (name)
+VALUES ("southwestern");
 
-INSERT INTO burgers (burger_name, devoured)
-VALUES ('sacreblue', false);
+INSERT INTO burgers (name)
+VALUES ("sacreblue");
