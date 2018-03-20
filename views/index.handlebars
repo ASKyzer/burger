@@ -1,32 +1,49 @@
-<h1>Good Burger</h1>
 
-<h4>Delicious Burgers Ready to Eat</h4>
+<div class="container">
 
-<ul class='burgerText'>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h4>Nom Nom Nom!</h4>
-
-<ul class='burgerText'>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h3>Place Your Order</h3>
-<form class="create-form">
-
-  <div class="form-group burgerText">
-    <label for="burgerName">Welcome to Good Burger, home of the Good Burger, can I take your order?</label>
-    <input type="text" id="burgerName" name="name">
+  <div class="row center-align">
+    <div class="col s12">
+      <img class="responsive-img center-align goodBurgerLogo" src="/assets/img/gdbrg.jpg" alt="good burger logo">
+    </div>
   </div>
 
-  <button id="submitBtn" class="submitBtn" type="submit">Place Order</button>
-</form>
+  <div class="row center-align">
+    <div class="col s12 m6 flow-text">
+      <h4 class="center-align">Ready to Eat</h4>
+      <ul class='burgerText'>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devoured=false}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col s12 m6 flow-text">
+      <h4>Nom Nom Nom!</h4>
+      <ul class='burgerText'>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devoured=true}}
+          {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  <div class="row center-align">
+    <div class="col s12 flow-text">
+      <h3>Place Your Order</h3>
+      <form class="create-form">
+
+        <div class="form-group burgerText">
+          <label for="burgerName">Welcome to Good Burger, home of the Good Burger, can I take your order?</label>
+          <input type="text" id="burgerName" name="name">
+        </div>
+
+        <button id="submitBtn" class="submitBtn" type="submit">Place Order</button>
+      </form>
+    </div>
+  </div>
+
+
+
+</div>
