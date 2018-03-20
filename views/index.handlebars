@@ -9,8 +9,8 @@
 
   <div class="row center-align">
     <div class="col s12 m6 flow-text">
-      <h4 class="center-align">Ready to Eat</h4>
-      <ul class='burgerText'>
+      <h4 class="center-align">Pret-a-Manger</h4>
+      <ul class=''>
         {{#each burgers}}
           {{#unless devoured}}
             {{> burgers/burger-block devoured=false}}
@@ -20,7 +20,7 @@
     </div>
     <div class="col s12 m6 flow-text">
       <h4>Nom Nom Nom!</h4>
-      <ul class='burgerText'>
+      <ul class=''>
         {{#each burgers}}
           {{#if devoured}}
             {{> burgers/burger-block devoured=true}}
@@ -34,7 +34,7 @@
       <h3>Place Your Order</h3>
       <form class="create-form">
 
-        <div class="form-group burgerText">
+        <div class="form-group ">
           <label for="burgerName">Welcome to Good Burger, home of the Good Burger, can I take your order?</label>
           <input type="text" id="burgerName" name="name">
         </div>
